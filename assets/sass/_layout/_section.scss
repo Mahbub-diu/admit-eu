@@ -260,3 +260,23 @@
     }
   }
 }
+
+.why-choose-uk-main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f8f9fa;
+  background-image: url('/assets/images/shape/why-uk.svg');
+  background-size: initial;
+  background-position: left top 10%;
+  background-repeat: no-repeat;
+  .title-box {
+    text-align: center;
+    h2 {
+      font-size: 64px;
+      line-height: 80px;
+      font-family: $geller-600;
+      color: #020f30;
+      font-weight: 600;
+    }
+  }
+}
