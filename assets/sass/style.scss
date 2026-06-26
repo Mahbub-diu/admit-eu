@@ -1,0 +1,55 @@
+/*-----------------------------------------------------------------
+
+Template Name: Admit-EU Education Consulancy Website
+Author:  Mahbubur Rahman
+Author URI: https://mahbubur.com/
+Developer: Mahbubur Rahman
+Version: 1.0.0
+Description: Admit-EU Education Consulancy Website
+
+-------------------------------------------------------------------
+CSS TABLE OF CONTENTS
+-------------------------------------------------------------------
+
+01. abstracts
+    1.01 --> mixins
+    1.02 --> variable
+
+02. base
+    2.01 --> typography
+    2.02 --> animation
+
+03. components
+    3.01 --> buttons
+    3.02 --> progress
+    3.03 --> preloader
+
+04. layout
+    4.01 --> header
+    4.02 --> banner
+    4.03 --> section
+    4.04 --> footer
+
+------------------------------------------------------------------*/
+
+// Google fonts ***
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+// Abstracts styles ***
+@import '_abstracts/_mixins';
+@import '_abstracts/_variables';
+
+// Typography styles***
+@import '_base/_typography';
+@import '_base/_animation';
+
+// Component styles ***
+@import '_components/_buttons';
+@import '_components/_progress';
+@import '_components/_preloader';
+
+// Layout styles ***
+@import '_layout/_header';
+@import '_layout/_banner';
+@import '_layout/_section';
+@import '_layout/_footer';

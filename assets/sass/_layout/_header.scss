@@ -1,0 +1,103 @@
+header {
+  .main-header {
+    position: relative;
+    background: #faf7f2;
+    padding: 20px 0;
+
+    .header-flex {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      .logo-box {
+        width: 140px;
+        img {
+          max-width: 100%;
+        }
+      }
+      .main-header-items {
+        > ul {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 22px;
+          li {
+            position: relative;
+            a {
+              font-size: 17px;
+              font-family: $dm-font;
+              color: $logo-blue;
+              //   color: $white;
+              text-transform: capitalize;
+              font-weight: 500;
+              @include transition-3s;
+              &:hover {
+                color: $logo-golden;
+              }
+              i {
+                font-size: 14px;
+                margin-left: 4px;
+              }
+              &.active {
+                color: $logo-golden;
+              }
+            }
+
+            > ul {
+              display: flex;
+              flex-direction: column;
+              position: absolute;
+              top: calc(100% + 7px);
+              inset-inline-start: 0;
+              min-width: 225px;
+              visibility: hidden;
+              opacity: 0;
+              transform-origin: top center;
+              align-items: start;
+              gap: 0;
+              text-align: left;
+              transform: translateY(10px);
+              transition: all 0.3s 0s ease-out;
+              top: 100%;
+              padding-top: 2px;
+              background: #f9f7f2;
+              padding: 10px 15px;
+              border-top: 2px solid $logo-blue;
+            }
+            &:hover {
+              ul {
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+          }
+          > li {
+            &:last-child {
+              a {
+                background: $logo-golden;
+                position: relative;
+                padding: 10px 20px;
+                border-radius: 10px;
+                color: #fff;
+                padding-right: 42px;
+                &::after {
+                  width: 20px;
+                  height: 20px;
+                  margin-top: 5px;
+                  margin-left: 8px;
+                  background: url('/assets/images/icons/right-arrow.svg');
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: contain;
+                  position: absolute;
+                  opacity: 1;
+                  content: '';
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
