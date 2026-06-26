@@ -580,7 +580,16 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   flex-wrap: wrap;
   align-items: center;
   gap: 50px;
-  border-radius: 8px;
+  border-radius: 12px;
+  position: relative;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  background-image: url("/assets/images/shape/top-uni.svg");
+  background-size: initial;
+  background-position: right 0px top;
+  background-repeat: no-repeat;
 }
 .why-choose-uk-main .why-uk-content-parent .image-box {
   flex: 1;
