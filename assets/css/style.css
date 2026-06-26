@@ -530,6 +530,7 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   background-size: initial;
   background-position: left top 10%;
   background-repeat: no-repeat;
+  margin-bottom: 300px;
 }
 .why-choose-uk-main .title-box {
   text-align: center;
@@ -540,4 +541,71 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   font-family: "geller_testheadline_semibold";
   color: #020f30;
   font-weight: 600;
+}
+.why-choose-uk-main ul {
+  margin: 64px 0;
+  border: none;
+  justify-content: center;
+  gap: 16px;
+}
+.why-choose-uk-main ul li button {
+  font-size: 18px;
+  line-height: 24px;
+  overflow: hidden;
+  border: 1px solid #012861 !important;
+  color: #012861;
+  padding-top: 10px;
+  padding-right: 24px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 8px 8px 8px 8px !important;
+  -webkit-border-radius: 8px 8px 8px 8px !important;
+  -moz-border-radius: 8px 8px 8px 8px !important;
+  -ms-border-radius: 8px 8px 8px 8px !important;
+  -o-border-radius: 8px 8px 8px 8px !important;
+}
+.why-choose-uk-main ul li button.active {
+  background-color: #012861 !important;
+  color: #fff !important;
+}
+.why-choose-uk-main ul li button:hover {
+  background-color: #012861 !important;
+  color: #fff !important;
+}
+.why-choose-uk-main .why-uk-content-parent {
+  padding: 16px;
+  border: 1px solid #012861;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+  border-radius: 8px;
+}
+.why-choose-uk-main .why-uk-content-parent .image-box {
+  flex: 1;
+  border-radius: 8px;
+}
+.why-choose-uk-main .why-uk-content-parent .image-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+.why-choose-uk-main .why-uk-content-parent .content-box {
+  flex: 1;
+}
+.why-choose-uk-main .why-uk-content-parent .content-box h3 {
+  font-size: 56px;
+  line-height: 72px;
+  font-weight: 600;
+  font-family: "geller_testheadline_semibold";
+  color: #020f30;
+  margin-bottom: 40px;
+}
+.why-choose-uk-main .why-uk-content-parent .content-box p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  color: #020f30;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

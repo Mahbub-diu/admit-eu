@@ -269,6 +269,7 @@
   background-size: initial;
   background-position: left top 10%;
   background-repeat: no-repeat;
+  margin-bottom: 300px;
   .title-box {
     text-align: center;
     h2 {
@@ -277,6 +278,75 @@
       font-family: $geller-600;
       color: #020f30;
       font-weight: 600;
+    }
+  }
+  ul {
+    margin: 64px 0;
+    border: none;
+    justify-content: center;
+    gap: 16px;
+    li {
+      button {
+        font-size: 18px;
+        line-height: 24px;
+        overflow: hidden;
+        border: 1px solid $logo-blue !important;
+        color: $logo-blue;
+        padding-top: 10px;
+        padding-right: 24px;
+        padding-bottom: 10px;
+        padding-left: 24px;
+        font-family: $dm-font;
+        border-radius: 8px 8px 8px 8px !important;
+        -webkit-border-radius: 8px 8px 8px 8px !important;
+        -moz-border-radius: 8px 8px 8px 8px !important;
+        -ms-border-radius: 8px 8px 8px 8px !important;
+        -o-border-radius: 8px 8px 8px 8px !important;
+        &.active {
+          background-color: $logo-blue !important;
+          color: $white !important;
+        }
+        &:hover {
+          background-color: $logo-blue !important;
+          color: $white !important;
+        }
+      }
+    }
+  }
+  .why-uk-content-parent {
+    padding: 16px;
+    border: 1px solid $logo-blue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    border-radius: 8px;
+    .image-box {
+      flex: 1;
+      border-radius: 8px;
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+    .content-box {
+      flex: 1;
+      h3 {
+        font-size: 56px;
+        line-height: 72px;
+        font-weight: 600;
+        font-family: $geller-600;
+        color: #020f30;
+        margin-bottom: 40px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        font-family: $dm-font;
+        color: #020f30;
+        margin-bottom: 20px;
+      }
     }
   }
 }
