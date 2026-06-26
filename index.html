@@ -19,8 +19,8 @@
     <!-- Magnigic popup css -->
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
-    <!-- Nice select css -->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet" />
+
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -170,9 +170,58 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-sm-12 col-md-8 col-lg-8">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum tenetur, voluptatem excepturi
-                        laboriosam cum, voluptas blanditiis asperiores ut unde pariatur fugiat sed eos totam, minima
-                        explicabo perspiciatis earum quasi aliquam.
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="course-tab" data-bs-toggle="tab"
+                                    data-bs-target="#course-tab-pane" type="button" role="tab"
+                                    aria-controls="course-tab-pane" aria-selected="true">courses</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="university-tab" data-bs-toggle="tab"
+                                    data-bs-target="#university-tab-pane" type="button" role="tab"
+                                    aria-controls="university-tab-pane" aria-selected="false">university</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane show active" id="course-tab-pane" role="tabpanel"
+                                aria-labelledby="course-tab" tabindex="0">
+                                <form action="">
+                                    <div class="course-input-group">
+                                        <label class="form-label">I'm looking for:</label>
+
+                                        <select class="form-select select2">
+                                            <option></option>
+                                            <option value="1">Undergraduate</option>
+                                            <option value="2">Postgraduate</option>
+                                            <option value="3">PhD</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="course-input-group">
+                                        <label class="form-label">I'm planning to study:</label>
+
+                                        <select class="form-select select2">
+                                            <option></option>
+                                            <option value="1">Business</option>
+                                            <option value="2">Computer Science</option>
+                                            <option value="3">Engineering</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="course-input-button">
+                                        <button type="submit" class="btn course-filter-btn">
+                                            <img src="assets/images/icons/search.svg" alt="">
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane" id="university-tab-pane" role="tabpanel"
+                                aria-labelledby="university-tab" tabindex="0">
+                                <h1>hello world uni</h1>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,8 +249,8 @@
 
     <!-- Magnific popup min Js -->
     <script src="assets/js/magnific-popup.min.js"></script>
-    <!-- Nice select min Js -->
-    <script src="assets/js/nice-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js">
+    </script>
 
     <!-- Script Js -->
     <script src="assets/js/script.js"></script>

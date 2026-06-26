@@ -144,4 +144,120 @@
   background: $logo-blue;
   margin-bottom: 300px;
   color: $white;
+  background-image: url('/assets/images/shape/course-filter-shape.svg');
+  background-size: contain;
+  background-position: right 0px top;
+  background-repeat: no-repeat;
+
+  ul {
+    margin-bottom: 20px;
+    border: none;
+    gap: 24px;
+    li {
+      button {
+        display: flex;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        font-family: $dm-font;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        border: 1px solid #f8f9fa !important;
+        color: $white;
+        text-transform: uppercase;
+        min-width: 150px;
+        border-radius: 12px !important;
+        -webkit-border-radius: 12px !important;
+        -moz-border-radius: 12px !important;
+        -ms-border-radius: 12px !important;
+        -o-border-radius: 12px !important;
+        @include transition-3s;
+        &:hover {
+          color: $white;
+        }
+        &.active {
+          color: $logo-blue;
+        }
+      }
+    }
+  }
+  .tab-content > .active {
+    display: block;
+    border: 1px solid $logo-golden;
+    padding: 0px;
+    border-radius: 12px;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    height: 96px;
+    background: $logo-blue;
+    border-radius: 12px;
+  }
+  .course-input-group {
+    width: 390px;
+    padding: 21px 32px;
+    border-right: 1px solid #2c3753;
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-family: $dm-font;
+      font-size: 16px;
+      color: $white;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    .select2-container--default {
+      .select2-selection--single {
+        border: 0 !important;
+
+        .select2-selection__rendered {
+          color: $logo-golden;
+          font-family: $dm-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding: 0;
+        }
+      }
+    }
+
+    .select2-container--default {
+      .select2-selection--single {
+        background-color: transparent;
+        border: 0;
+        border-radius: 4px;
+
+        .select2-selection__rendered {
+          color: $logo-golden;
+          font-family: $dm-font;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .course-input-button {
+    padding: 8px;
+    .course-filter-btn {
+      margin-top: 0px;
+      width: 140px;
+      padding: 0px;
+      height: 100%;
+      background: $logo-golden;
+      border: 0;
+      border-radius: 0px 6px 6px 0px;
+      cursor: pointer;
+    }
+  }
 }

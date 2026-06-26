@@ -30,4 +30,14 @@
   });
 
   // home slider end here
+
+  //   home course filter select2 start
+
+  $('.select2').select2({
+    placeholder: 'Select an option',
+    allowClear: true,
+    width: '100%',
+  });
+
+  //   home course filter select2 ends
 })(jQuery);

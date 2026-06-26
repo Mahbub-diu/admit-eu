@@ -410,4 +410,114 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   background: #012861;
   margin-bottom: 300px;
   color: #fff;
+  background-image: url("/assets/images/shape/course-filter-shape.svg");
+  background-size: contain;
+  background-position: right 0px top;
+  background-repeat: no-repeat;
+}
+.course-uni-filter-main ul {
+  margin-bottom: 20px;
+  border: none;
+  gap: 24px;
+}
+.course-uni-filter-main ul li button {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #f8f9fa !important;
+  color: #fff;
+  text-transform: uppercase;
+  min-width: 150px;
+  border-radius: 12px !important;
+  -webkit-border-radius: 12px !important;
+  -moz-border-radius: 12px !important;
+  -ms-border-radius: 12px !important;
+  -o-border-radius: 12px !important;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.course-uni-filter-main ul li button:hover {
+  color: #fff;
+}
+.course-uni-filter-main ul li button.active {
+  color: #012861;
+}
+.course-uni-filter-main .tab-content > .active {
+  display: block;
+  border: 1px solid #b9996a;
+  padding: 0px;
+  border-radius: 12px;
+}
+.course-uni-filter-main form {
+  display: flex;
+  flex-direction: row;
+  height: 96px;
+  background: #012861;
+  border-radius: 12px;
+}
+.course-uni-filter-main .course-input-group {
+  width: 390px;
+  padding: 21px 32px;
+  border-right: 1px solid #2c3753;
+}
+.course-uni-filter-main .course-input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 24px;
+}
+.course-uni-filter-main .course-input-group .select2-container--default .select2-selection--single {
+  border: 0 !important;
+}
+.course-uni-filter-main .course-input-group .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #b9996a;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+}
+.course-uni-filter-main .course-input-group .select2-container--default .select2-selection--single {
+  background-color: transparent;
+  border: 0;
+  border-radius: 4px;
+}
+.course-uni-filter-main .course-input-group .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #b9996a;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0;
+}
+.course-uni-filter-main .course-input-button {
+  padding: 8px;
+}
+.course-uni-filter-main .course-input-button .course-filter-btn {
+  margin-top: 0px;
+  width: 140px;
+  padding: 0px;
+  height: 100%;
+  background: #b9996a;
+  border: 0;
+  border-radius: 0px 6px 6px 0px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
