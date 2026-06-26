@@ -403,4 +403,11 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   position: absolute;
   opacity: 1;
   content: "";
+}
+
+.course-uni-filter-main {
+  padding: 100px 0;
+  background: #012861;
+  margin-bottom: 300px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
