@@ -63,6 +63,7 @@ header {
               background: #f9f7f2;
               padding: 10px 15px;
               border-top: 2px solid $logo-blue;
+              z-index: 9;
             }
             &:hover {
               ul {
