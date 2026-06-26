@@ -37,6 +37,8 @@
     placeholder: 'Select an option',
     allowClear: true,
     width: '100%',
+    minimumResultsForSearch: 0,
+    placeholder: $(this).data('placeholder'),
   });
 
   //   home course filter select2 ends

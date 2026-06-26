@@ -190,7 +190,7 @@
                                     <div class="course-input-group">
                                         <label class="form-label">I'm looking for:</label>
 
-                                        <select class="form-select select2">
+                                        <select class="form-select select2" data-placeholder="Enter subject or course:">
                                             <option></option>
                                             <option value="1">Undergraduate</option>
                                             <option value="2">Postgraduate</option>
@@ -201,7 +201,7 @@
                                     <div class="course-input-group">
                                         <label class="form-label">I'm planning to study:</label>
 
-                                        <select class="form-select select2">
+                                        <select class="form-select select2" data-placeholder="Select course type">
                                             <option></option>
                                             <option value="1">Business</option>
                                             <option value="2">Computer Science</option>
@@ -218,7 +218,35 @@
                             </div>
                             <div class="tab-pane" id="university-tab-pane" role="tabpanel"
                                 aria-labelledby="university-tab" tabindex="0">
-                                <h1>hello world uni</h1>
+                                <form action="">
+                                    <div class="course-input-group">
+                                        <label class="form-label">I'm looking for:</label>
+
+                                        <select class="form-select select2" data-placeholder="Enter university name">
+                                            <option></option>
+                                            <option value="1">Undergraduate</option>
+                                            <option value="2">Postgraduate</option>
+                                            <option value="3">PhD</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="course-input-group">
+                                        <label class="form-label">I'm planning to study:</label>
+
+                                        <select class="form-select select2" data-placeholder="Select course type">
+                                            <option></option>
+                                            <option value="1">Business</option>
+                                            <option value="2">Computer Science</option>
+                                            <option value="3">Engineering</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="course-input-button">
+                                        <button type="submit" class="btn course-filter-btn">
+                                            <img src="assets/images/icons/search.svg" alt="">
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
 
                         </div>
