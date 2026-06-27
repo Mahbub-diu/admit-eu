@@ -1164,4 +1164,97 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   content: url("/assets/images/icons/Calendar-Icon-Dark.svg");
   height: 20px;
   width: 20px;
+}
+
+.faq-main {
+  padding: 100px 0;
+}
+.faq-main .title-box {
+  padding-right: 50px;
+}
+.faq-main .title-box h3 {
+  font-size: 64px;
+  line-height: 80px;
+  font-family: "geller_testheadline_semibold";
+  color: #020f30;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.faq-main .title-box p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper .title-box {
+  margin-bottom: 0;
+  padding: 32px 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: 1px solid #012861;
+  background: initial;
+  font-size: 28px;
+  line-height: 36px;
+  font-family: "geller_testheadline_black";
+  font-weight: 900;
+  cursor: pointer;
+  position: relative;
+  padding-right: 50px;
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper .title-box::before {
+  color: #ccc;
+  top: 37px;
+  margin-top: 0;
+  position: absolute;
+  right: 0;
+  font-size: 16px;
+  width: 25px;
+  height: 25px;
+  aspect-ratio: 1/1;
+  background: url("/assets/images/icons/according-plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper .description-box {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding-bottom: 0;
+  transition: max-height 0.4s ease, opacity 0.35s ease, padding-bottom 0.4s ease;
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper .description-box p {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper .description-box ul {
+  margin-left: 20px;
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper .description-box ul li {
+  padding-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  list-style-type: disc;
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper.no-transition .description-box {
+  transition: none;
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper.open .title-box::before {
+  background: url("/assets/images/icons/according-minus.svg");
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper.open .description-box {
+  max-height: unset;
+  opacity: 1;
+  padding-bottom: 32px;
+}
+.faq-main .accordion-wrapper .single-accordion-wrapper.open .description {
+  max-height: unset;
 }/*# sourceMappingURL=style.css.map */

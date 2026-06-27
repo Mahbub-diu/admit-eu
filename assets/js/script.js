@@ -213,4 +213,35 @@
   });
 
   // uni fair select ends
+
+  // home faq accordion start
+  $('.accordion-wrapper').each(function () {
+    var $items = $(this).find('.single-accordion-wrapper');
+
+    // set initial state instantly, without the CSS transition kicking in
+    $items.addClass('no-transition').removeClass('open');
+    $items.first().addClass('open');
+
+    // re-enable transitions on the next frame
+    requestAnimationFrame(function () {
+      $items.removeClass('no-transition');
+    });
+  });
+
+  $('.accordion-wrapper').on(
+    'click',
+    '.single-accordion-wrapper > .title-box',
+    function () {
+      var $current = $(this).closest('.single-accordion-wrapper');
+      var $wrapper = $current.closest('.accordion-wrapper');
+      var wasOpen = $current.hasClass('open');
+
+      $wrapper.find('.single-accordion-wrapper.open').removeClass('open');
+
+      if (!wasOpen) {
+        $current.addClass('open');
+      }
+    },
+  );
+  // home faq accordion ends
 })(jQuery);
