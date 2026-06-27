@@ -125,3 +125,11 @@
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
 }
+
+@mixin title-64 {
+  font-size: 64px;
+  line-height: 80px;
+  font-family: $geller-600;
+  color: #020f30;
+  font-weight: 600;
+}

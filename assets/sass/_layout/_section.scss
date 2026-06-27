@@ -269,15 +269,11 @@
   background-size: initial;
   background-position: left top 10%;
   background-repeat: no-repeat;
-  margin-bottom: 300px;
+
   .title-box {
     text-align: center;
     h2 {
-      font-size: 64px;
-      line-height: 80px;
-      font-family: $geller-600;
-      color: #020f30;
-      font-weight: 600;
+      @include title-64;
     }
   }
   ul {
@@ -355,6 +351,108 @@
         font-family: $dm-font;
         color: #020f30;
         margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.world-class-main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  .title-box {
+    text-align: center;
+    h3 {
+      @include title-64;
+    }
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 0px auto;
+      margin-top: 32px;
+      margin-bottom: 80px;
+      max-width: 730px;
+      font-family: $dm-font;
+      font-weight: 400;
+    }
+  }
+  .top-uni-card {
+    border: 1px solid $logo-blue;
+    padding: 0px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+    .uni-logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 160px;
+      position: relative;
+      overflow: hidden;
+      img {
+        width: auto;
+        height: auto;
+        z-index: 9;
+        vertical-align: bottom;
+        max-width: 100%;
+      }
+      &::after {
+        position: absolute;
+        bottom: 0;
+        z-index: 0;
+        content: url('/assets/images/shape/Mask-group.svg');
+      }
+    }
+    .top-uni-details {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 458px;
+      h3 {
+        font-size: 32px;
+        font-style: normal;
+
+        line-height: 42px;
+        text-align: left;
+        font-family: $geller-600;
+        color: $logo-blue;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      p {
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 12px;
+        margin-top: 16px;
+        gap: 12px;
+        line-height: 24px;
+        img {
+          width: 20px;
+        }
+        span {
+          font-family: $dm-font;
+          font-weight: bold;
+          color: $logo-blue;
+        }
+      }
+      a {
+        width: fit-content;
+        font-weight: 600;
+        border-radius: 12px;
+        background: $logo-blue;
+        color: #fff;
+        display: block;
+        height: 56px;
+        padding: 15px 24px;
+        margin-top: 32px;
+        position: relative;
+        bottom: 0;
+        line-height: 24px;
+        text-align: center;
+        text-transform: capitalize;
       }
     }
   }

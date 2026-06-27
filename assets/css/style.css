@@ -530,7 +530,6 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   background-size: initial;
   background-position: left top 10%;
   background-repeat: no-repeat;
-  margin-bottom: 300px;
 }
 .why-choose-uk-main .title-box {
   text-align: center;
@@ -617,4 +616,107 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   font-family: "DM Sans", sans-serif;
   color: #020f30;
   margin-bottom: 20px;
+}
+
+.world-class-main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.world-class-main .title-box {
+  text-align: center;
+}
+.world-class-main .title-box h3 {
+  font-size: 64px;
+  line-height: 80px;
+  font-family: "geller_testheadline_semibold";
+  color: #020f30;
+  font-weight: 600;
+}
+.world-class-main .title-box p {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0px auto;
+  margin-top: 32px;
+  margin-bottom: 80px;
+  max-width: 730px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+.world-class-main .top-uni-card {
+  border: 1px solid #012861;
+  padding: 0px;
+  border-radius: 12px;
+}
+.world-class-main .top-uni-card .uni-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+.world-class-main .top-uni-card .uni-logo-container img {
+  width: auto;
+  height: auto;
+  z-index: 9;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+.world-class-main .top-uni-card .uni-logo-container::after {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  content: url("/assets/images/shape/Mask-group.svg");
+}
+.world-class-main .top-uni-card .top-uni-details {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 458px;
+}
+.world-class-main .top-uni-card .top-uni-details h3 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 42px;
+  text-align: left;
+  font-family: "geller_testheadline_semibold";
+  color: #012861;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.world-class-main .top-uni-card .top-uni-details p {
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  margin-top: 16px;
+  gap: 12px;
+  line-height: 24px;
+}
+.world-class-main .top-uni-card .top-uni-details p img {
+  width: 20px;
+}
+.world-class-main .top-uni-card .top-uni-details p span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  color: #012861;
+}
+.world-class-main .top-uni-card .top-uni-details a {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  border-radius: 12px;
+  background: #012861;
+  color: #fff;
+  display: block;
+  height: 56px;
+  padding: 15px 24px;
+  margin-top: 32px;
+  position: relative;
+  bottom: 0;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
 }/*# sourceMappingURL=style.css.map */
