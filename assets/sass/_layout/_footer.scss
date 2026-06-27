@@ -2,16 +2,52 @@
 footer {
   .footer-main {
     padding: 100px 0;
-    margin-bottom: 200px;
-    background: #faf7f2;
+    background-color: #faf7f2;
+
     .logo-box {
       img {
         max-width: 120px;
       }
     }
     .footer-description {
-      margin: 40px 0;
+      margin: 20px 0;
+      padding-right: 40px;
       p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: normal;
+        font-family: $dm-font;
+        color: $logo-blue;
+      }
+    }
+    .footer-common-links {
+      h5 {
+        text-transform: capitalize;
+        font-family: $geller-600;
+        font-weight: 600;
+        color: $logo-blue;
+        margin-bottom: 20px;
+        font-size: 25px;
+        line-height: normal;
+      }
+      ul {
+        li {
+          a {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: normal;
+            font-family: $dm-font;
+            color: $logo-blue;
+          }
+        }
+      }
+    }
+    .copyright-text {
+      border-top: 1px solid $logo-blue;
+      padding-top: 40px;
+      margin-top: 40px;
+      p {
+        text-align: center;
         font-weight: 400;
         font-size: 18px;
         line-height: normal;

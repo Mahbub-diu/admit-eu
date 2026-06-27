@@ -1261,16 +1261,44 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
 
 footer .footer-main {
   padding: 100px 0;
-  margin-bottom: 200px;
-  background: #faf7f2;
+  background-color: #faf7f2;
 }
 footer .footer-main .logo-box img {
   max-width: 120px;
 }
 footer .footer-main .footer-description {
-  margin: 40px 0;
+  margin: 20px 0;
+  padding-right: 40px;
 }
 footer .footer-main .footer-description p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  font-family: "DM Sans", sans-serif;
+  color: #012861;
+}
+footer .footer-main .footer-common-links h5 {
+  text-transform: capitalize;
+  font-family: "geller_testheadline_semibold";
+  font-weight: 600;
+  color: #012861;
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: normal;
+}
+footer .footer-main .footer-common-links ul li a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: normal;
+  font-family: "DM Sans", sans-serif;
+  color: #012861;
+}
+footer .footer-main .copyright-text {
+  border-top: 1px solid #012861;
+  padding-top: 40px;
+}
+footer .footer-main .copyright-text p {
+  text-align: center;
   font-weight: 400;
   font-size: 18px;
   line-height: normal;

@@ -244,4 +244,6 @@
     },
   );
   // home faq accordion ends
+
+  $('#copyright-year').text(new Date().getFullYear());
 })(jQuery);
