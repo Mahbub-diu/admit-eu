@@ -456,4 +456,56 @@
       }
     }
   }
+  .view-all-uni {
+    text-align: center;
+    margin-top: 80px;
+    a {
+      border: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-family: $dm-font;
+      font-weight: 600;
+      padding-top: 15px;
+      padding-right: 42px;
+      padding-bottom: 15px;
+      padding-left: 24px;
+      line-height: 24px;
+      text-transform: initial;
+      margin: auto;
+      background: $logo-blue;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      color: $white;
+      &::after {
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+        margin-left: 8px;
+        background-image: url('/assets/images/icons/right-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        content: '';
+      }
+    }
+  }
+}
+
+.hear-students-main {
+  background: $logo-blue;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 300px;
+  .title-box {
+    h2 {
+      @include title-64;
+      color: $white;
+      text-align: center;
+      span {
+        color: $logo-golden;
+      }
+    }
+  }
 }

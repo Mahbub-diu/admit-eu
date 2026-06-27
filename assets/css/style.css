@@ -719,4 +719,58 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   line-height: 24px;
   text-align: center;
   text-transform: capitalize;
+}
+.world-class-main .view-all-uni {
+  text-align: center;
+  margin-top: 80px;
+}
+.world-class-main .view-all-uni a {
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-right: 42px;
+  padding-bottom: 15px;
+  padding-left: 24px;
+  line-height: 24px;
+  text-transform: initial;
+  margin: auto;
+  background: #012861;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.world-class-main .view-all-uni a::after {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  margin-left: 8px;
+  background-image: url("/assets/images/icons/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  content: "";
+}
+
+.hear-students-main {
+  background: #012861;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 300px;
+}
+.hear-students-main .title-box h2 {
+  font-size: 64px;
+  line-height: 80px;
+  font-family: "geller_testheadline_semibold";
+  color: #020f30;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.hear-students-main .title-box h2 span {
+  color: #b9996a;
 }/*# sourceMappingURL=style.css.map */
