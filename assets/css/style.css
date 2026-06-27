@@ -770,7 +770,6 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   font-weight: 600;
   color: #fff;
   text-align: center;
-  margin-bottom: 60px;
 }
 .hear-students-main .title-box h2 span {
   color: #b9996a;
@@ -790,7 +789,7 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
 .hear-students-main .hear-studen-wrapper .swiper .swiper-slide {
   scale: 0.96;
   transition: 0.4s;
-  border: 0px solid #000;
+  border: 0px solid #b9996a;
   height: 515px;
   z-index: 99;
   position: relative;
@@ -809,7 +808,7 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
 .hear-students-main .hear-studen-wrapper .swiper .swiper-slide .video-box .video-wrapper {
   width: 100%;
   position: relative;
-  padding-top: 150%;
+  padding-top: 156%;
 }
 .hear-students-main .hear-studen-wrapper .swiper .swiper-slide .video-box .video-wrapper iframe {
   position: absolute;
@@ -817,32 +816,30 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
-.hear-students-main .hear-studen-wrapper .swiper .swiper-slide .video-box .hear-play-btn {
+.hear-students-main .hear-studen-wrapper .swiper .swiper-slide .video-box .video-wrapper img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999999;
-  background: red;
-  width: 54px;
-  height: 33px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hear-students-main .hear-studen-wrapper .swiper .swiper-slide .hear-students-info {
+  text-align: center;
 }
 .hear-students-main .hear-studen-wrapper .swiper .swiper-slide .hear-students-info h3 {
   border-radius: 8px;
-  background: #abf970;
+  background: #b9996a;
   text-align: center;
   display: inline-flex;
   padding: 4px 16px;
   align-items: center;
   gap: 7px;
-  color: #010a1c;
+  color: #fff;
   font-size: 40px;
   font-style: normal;
   font-weight: 500;
@@ -876,7 +873,7 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
 .hear-students-main .hear-studen-wrapper .swiper .swiper-slide.swiper-slide-active .video-box {
   scale: 1;
   transition: 0.4s;
-  border: 8px solid #abf970;
+  border: 8px solid #b9996a;
   height: 510px;
   z-index: 9999;
   position: relative;
@@ -886,6 +883,46 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   pointer-events: auto;
   opacity: 1;
 }
-.hear-students-main .hear-studen-wrapper .swiper .swiper-slide.swiper-slide-active .video-box .hear-play-btn {
-  top: 46%;
+.hear-students-main .hear-studen-wrapper .swiper .swiper-slide.swiper-slide-active .video-box .video-wrapper iframe {
+  pointer-events: auto;
+}
+.hear-students-main .hear-studen-wrapper .swiper .hear-students-navigation {
+  position: absolute;
+  bottom: -22px;
+  display: block;
+  left: 0;
+  right: 0;
+  width: 1344px;
+  margin: 0 auto;
+}
+.hear-students-main .hear-studen-wrapper .swiper .hear-students-navigation .swiper-button-next,
+.hear-students-main .hear-studen-wrapper .swiper .hear-students-navigation .swiper-button-prev {
+  position: absolute;
+  top: unset;
+  bottom: 5px !important;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: #b9996a;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+.hear-students-main .hear-studen-wrapper .swiper .hear-students-navigation .swiper-button-prev {
+  right: 58px;
+  left: unset;
+}
+.hear-students-main .hear-studen-wrapper .swiper .hear-students-navigation .swiper-button-prev::after {
+  content: url("/assets/images/icons/left-arrow.svg");
+  height: 100%;
+  top: -8px;
+  position: relative;
+}
+.hear-students-main .hear-studen-wrapper .swiper .hear-students-navigation .swiper-button-next {
+  right: 0px;
+}
+.hear-students-main .hear-studen-wrapper .swiper .hear-students-navigation .swiper-button-next::after {
+  content: url("/assets/images/icons/right-arrow.svg");
+  top: -8px;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

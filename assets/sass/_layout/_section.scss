@@ -503,7 +503,7 @@
       @include title-64;
       color: $white;
       text-align: center;
-      margin-bottom: 60px;
+
       span {
         color: $logo-golden;
       }
@@ -524,7 +524,7 @@
       .swiper-slide {
         scale: 0.96;
         transition: 0.4s;
-        border: 0px solid #000;
+        border: 0px solid $logo-golden;
         height: 515px;
         z-index: 99;
         position: relative;
@@ -541,42 +541,37 @@
           .video-wrapper {
             width: 100%;
             position: relative;
-            padding-top: 150%;
+            padding-top: 156%;
             iframe {
               position: absolute;
               top: 0;
               left: 0;
               width: 100%;
               height: 100%;
+              pointer-events: none;
             }
-          }
-          .hear-play-btn {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 999999;
-            background: red;
-            width: 54px;
-            height: 33px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            border-radius: 5px;
+            img {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              pointer-events: none;
+              object-fit: cover;
+            }
           }
         }
         .hear-students-info {
+          text-align: center;
           h3 {
             border-radius: 8px;
-            background: #abf970;
+            background: $logo-golden;
             text-align: center;
             display: inline-flex;
             padding: 4px 16px;
             align-items: center;
             gap: 7px;
-            color: #010a1c;
+            color: #fff;
             font-size: 40px;
             font-style: normal;
             font-weight: 500;
@@ -610,7 +605,7 @@
           .video-box {
             scale: 1;
             transition: 0.4s;
-            border: 8px solid #abf970;
+            border: 8px solid $logo-golden;
             height: 510px;
             z-index: 9999;
             position: relative;
@@ -619,9 +614,50 @@
             overflow: hidden;
             pointer-events: auto;
             opacity: 1;
-            .hear-play-btn {
-              top: 46%;
+            .video-wrapper iframe {
+              pointer-events: auto;
             }
+          }
+        }
+      }
+      .hear-students-navigation {
+        position: absolute;
+        bottom: -22px;
+        display: block;
+        left: 0;
+        right: 0;
+        width: 1344px;
+        margin: 0 auto;
+
+        .swiper-button-next,
+        .swiper-button-prev {
+          position: absolute;
+          top: unset;
+          bottom: 5px !important;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 40px;
+          background: $logo-golden;
+          border-radius: 50%;
+          cursor: pointer;
+          z-index: 10;
+        }
+        .swiper-button-prev {
+          right: 58px;
+          left: unset;
+          &::after {
+            content: url('/assets/images/icons/left-arrow.svg');
+            height: 100%;
+            top: -8px;
+            position: relative;
+          }
+        }
+        .swiper-button-next {
+          right: 0px;
+          &::after {
+            content: url('/assets/images/icons/right-arrow.svg');
+            top: -8px;
+            position: relative;
           }
         }
       }

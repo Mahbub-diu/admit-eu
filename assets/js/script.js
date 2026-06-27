@@ -45,6 +45,18 @@
 
   // hear slider start
 
+  var autoPlayEnabled = false;
+  var isProgrammaticPause = false;
+  var isSliderInView = false;
+
+  function pauseHearSlidesExcept(exceptSlideEl) {
+    $('.hear-students-slider .swiper-slide').each(function () {
+      if (exceptSlideEl && this === exceptSlideEl) return;
+      const player = $(this).data('player');
+      if (player) player.pause().catch(() => {});
+    });
+  }
+
   var swiper = new Swiper('.hear-students-slider', {
     slidesPerView: 7,
     centeredSlides: true,
@@ -83,76 +95,54 @@
           return;
         }
 
-        $('.swiper-slide').each(function () {
+        $('.hear-students-slider .swiper-slide').each(function () {
           const $slide = $(this);
           const iframe = $slide.find('iframe')[0];
           if (iframe) {
-            const $playButton = $(
-              '<img class="gsi_video_play" src="/india/wp-content/uploads/sites/3/2025/03/play.svg">',
-            );
-            $slide.find('.gsi_slider_slide').append($playButton);
-
             const player = new Vimeo.Player(iframe);
             $slide.data('player', player);
 
             player.on('play', function () {
-              $('.swiper-slide')
-                .not($slide)
-                .each(function () {
-                  const otherPlayer = $(this).data('player');
-                  if (otherPlayer) otherPlayer.pause().catch(() => {});
-                });
+              pauseHearSlidesExcept($slide[0]);
 
-              const targetIndex = swiper.getSlideIndex($slide[0]);
+              const targetIndex = $slide.index();
               if (targetIndex !== swiper.activeIndex) {
                 swiper.slideTo(targetIndex);
               }
 
-              $playButton.hide();
               autoPlayEnabled = true;
             });
 
             player.on('pause', function () {
-              if ($slide.hasClass('swiper-slide-active')) {
+              if (
+                $slide.hasClass('swiper-slide-active') &&
+                !isProgrammaticPause
+              ) {
                 player.getCurrentTime().then(function (currentTime) {
                   player.getDuration().then(function (duration) {
-                    if (currentTime < duration && !isProgrammaticPause) {
+                    if (currentTime < duration) {
                       autoPlayEnabled = false;
                     }
                   });
                 });
-                $playButton.show();
               }
-            });
-
-            player.on('ended', function () {
-              $playButton.show();
             });
           }
         });
       },
-      slideChangeTransitionEnd: function () {
+      slideChange: function () {
         isProgrammaticPause = true;
-        // Pause all videos during slide change
-        $('.swiper-slide').each(function () {
-          const player = $(this).data('player');
-          const $playButton = $(this).find('.gsi_video_play');
-          if (player) {
-            player.pause().catch(() => {});
-            if ($(this).hasClass('swiper-slide-active')) {
-              $playButton.toggle(!player.paused); // Fixed: was using player.paused incorrectly
-            }
-          }
-        });
-
+        // Pause every slide's video as soon as the active slide changes
+        pauseHearSlidesExcept(null);
+      },
+      slideChangeTransitionEnd: function () {
         // Handle autoplay based on viewport visibility
         if (autoPlayEnabled && isSliderInView) {
           const activeSlide = swiper.slides[swiper.activeIndex];
           const activePlayer = $(activeSlide).data('player');
-          const $playButton = $(activeSlide).find('.gsi_video_play');
           if (activePlayer) {
+            pauseHearSlidesExcept(activeSlide);
             activePlayer.play().catch(() => {});
-            $playButton.hide();
           }
         }
 
@@ -163,17 +153,11 @@
     },
   });
 
-  // Play button click handler
-  $('.swiper').on('click', '.hear-play-btn', function (e) {
-    e.preventDefault();
-    const $slide = $(this).closest('.swiper-slide');
-    const player = $slide.data('player');
-    const targetIndex = swiper.getSlideIndex($slide[0]);
-
-    if (player) {
-      swiper.slideTo(targetIndex, 300, () => {
-        player.play().catch(() => {});
-      });
+  // Clicking anywhere on a slide makes it the active/centered slide
+  $('.hear-students-slider').on('click', '.swiper-slide', function () {
+    const targetIndex = $(this).index();
+    if (targetIndex !== swiper.activeIndex) {
+      swiper.slideTo(targetIndex);
     }
   });
 
@@ -187,15 +171,13 @@
 
           if (!isSliderInView) {
             // Pause all when leaving viewport
-            $('.swiper-slide').each(function () {
-              const player = $(this).data('player');
-              if (player) player.pause().catch(() => {});
-            });
+            pauseHearSlidesExcept(null);
           } else if (autoPlayEnabled) {
             // Resume playback when returning to viewport
             const activeSlide = swiper.slides[swiper.activeIndex];
             const activePlayer = $(activeSlide).data('player');
             if (activePlayer) {
+              pauseHearSlidesExcept(activeSlide);
               activePlayer.play().catch(() => {});
             }
           }
@@ -205,7 +187,7 @@
     );
 
     // Observe main slider container
-    const sliderContainer = document.querySelector('.gsi_slider_container');
+    const sliderContainer = document.querySelector('.hear-studen-wrapper');
     if (sliderContainer) {
       sliderObserver.observe(sliderContainer);
     }
@@ -213,7 +195,7 @@
     // Cleanup
     window.addEventListener('beforeunload', () => {
       sliderObserver.disconnect();
-      $('.swiper-slide').each(function () {
+      $('.hear-students-slider .swiper-slide').each(function () {
         const player = $(this).data('player');
         if (player) player.unload().catch(() => {});
       });
