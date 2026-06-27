@@ -151,4 +151,140 @@ br {
     width: 100%;
   }
 }
+
+.top-uni-card {
+  border: 1px solid $logo-blue;
+  padding: 0px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border-radius: 12px;
+  background: #fff;
+  .uni-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+    img {
+      width: auto;
+      height: auto;
+      z-index: 9;
+      vertical-align: bottom;
+      max-width: 100%;
+    }
+    &::after {
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+      content: url('/assets/images/shape/Mask-group.svg');
+    }
+  }
+  .top-uni-details {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 458px;
+    h3 {
+      font-size: 32px;
+      font-style: normal;
+
+      line-height: 42px;
+      text-align: left;
+      font-family: $geller-600;
+      color: $logo-blue;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    p {
+      margin-bottom: 0px;
+      display: flex;
+      flex-direction: row;
+      column-gap: 12px;
+      margin-top: 16px;
+      gap: 12px;
+      line-height: 24px;
+      img {
+        width: 20px;
+      }
+      span {
+        font-family: $dm-font;
+        font-weight: bold;
+        color: $logo-blue;
+      }
+    }
+    a {
+      width: fit-content;
+      font-weight: 600;
+      border-radius: 12px;
+      background: $logo-blue;
+      color: #fff;
+      display: block;
+      height: 56px;
+      padding: 15px 24px;
+      margin-top: 32px;
+      position: relative;
+      bottom: 0;
+      line-height: 24px;
+      text-align: center;
+      text-transform: capitalize;
+    }
+    .event-details {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 40px;
+      text-transform: capitalize;
+    }
+    .event-type {
+      color: $logo-blue;
+      font-size: 16px;
+      line-height: 26px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 8px;
+      border: 1px solid $logo-blue;
+      width: fit-content;
+      font-family: $dm-font;
+    }
+  }
+}
+.view-all-uni {
+  text-align: center;
+  margin-top: 80px;
+  a {
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-family: $dm-font;
+    font-weight: 600;
+    padding-top: 15px;
+    padding-right: 42px;
+    padding-bottom: 15px;
+    padding-left: 24px;
+    line-height: 24px;
+    text-transform: initial;
+    margin: auto;
+    background: $logo-blue;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: $white;
+    &::after {
+      width: 20px;
+      height: 20px;
+      margin-top: 2px;
+      margin-left: 8px;
+      background-image: url('/assets/images/icons/right-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      content: '';
+    }
+  }
+}
+
 // Custom class area end here ***

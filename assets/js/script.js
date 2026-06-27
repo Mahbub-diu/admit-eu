@@ -206,4 +206,11 @@
     );
   }
   // hear slider ends
+
+  // uni fair select start
+  $('.uni-fair-search-wrapper select').select2({
+    width: '100%',
+  });
+
+  // uni fair select ends
 })(jQuery);

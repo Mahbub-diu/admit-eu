@@ -188,6 +188,141 @@ figure {
   width: 100%;
 }
 
+.top-uni-card {
+  border: 1px solid #012861;
+  padding: 0px;
+  border-radius: 12px;
+  background: #fff;
+}
+.top-uni-card .uni-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+  position: relative;
+  overflow: hidden;
+}
+.top-uni-card .uni-logo-container img {
+  width: auto;
+  height: auto;
+  z-index: 9;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+.top-uni-card .uni-logo-container::after {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  content: url("/assets/images/shape/Mask-group.svg");
+}
+.top-uni-card .top-uni-details {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 458px;
+}
+.top-uni-card .top-uni-details h3 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 42px;
+  text-align: left;
+  font-family: "geller_testheadline_semibold";
+  color: #012861;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+.top-uni-card .top-uni-details p {
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  margin-top: 16px;
+  gap: 12px;
+  line-height: 24px;
+}
+.top-uni-card .top-uni-details p img {
+  width: 20px;
+}
+.top-uni-card .top-uni-details p span {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  color: #012861;
+}
+.top-uni-card .top-uni-details a {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 600;
+  border-radius: 12px;
+  background: #012861;
+  color: #fff;
+  display: block;
+  height: 56px;
+  padding: 15px 24px;
+  margin-top: 32px;
+  position: relative;
+  bottom: 0;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.top-uni-card .top-uni-details .event-details {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  text-transform: capitalize;
+}
+.top-uni-card .top-uni-details .event-type {
+  color: #012861;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: 1px solid #012861;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "DM Sans", sans-serif;
+}
+
+.view-all-uni {
+  text-align: center;
+  margin-top: 80px;
+}
+.view-all-uni a {
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-right: 42px;
+  padding-bottom: 15px;
+  padding-left: 24px;
+  line-height: 24px;
+  text-transform: initial;
+  margin: auto;
+  background: #012861;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.view-all-uni a::after {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  margin-left: 8px;
+  background-image: url("/assets/images/icons/right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  content: "";
+}
+
 header .main-header {
   position: relative;
   background: #faf7f2;
@@ -760,7 +895,6 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   background: #012861;
   padding-top: 100px;
   padding-bottom: 100px;
-  margin-bottom: 300px;
 }
 .hear-students-main .title-box h2 {
   font-size: 64px;
@@ -925,4 +1059,109 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   content: url("/assets/images/icons/right-arrow.svg");
   top: -8px;
   position: relative;
+}
+
+.univarsity-fair-main {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-image: url("/assets/images/home/destination-events.webp");
+  background-size: initial;
+  background-position: right 0px top;
+  background-color: #f8f9fa;
+  background-repeat: no-repeat;
+}
+.univarsity-fair-main .title-box {
+  padding-bottom: 80px;
+  max-width: 644px;
+}
+.univarsity-fair-main .title-box h2 {
+  font-size: 64px;
+  line-height: 80px;
+  font-family: "geller_testheadline_semibold";
+  color: #020f30;
+  font-weight: 600;
+  font-family: "geller_testheadline_bold";
+  font-weight: 800;
+}
+.univarsity-fair-main .title-box h2 span {
+  color: #b9996a;
+}
+.univarsity-fair-main .unifair-serach-box {
+  background-color: #fff;
+  margin-bottom: 64px;
+  border-radius: 12px;
+  border: 1px solid #000;
+  font-family: "DM Sans", sans-serif;
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-toggle {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 28px 32px;
+}
+@media (min-width: 768px) {
+  .univarsity-fair-main .unifair-serach-box .uni-fair-toggle {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .univarsity-fair-main .unifair-serach-box .uni-fair-toggle {
+    display: flex;
+    border-radius: 12px;
+    padding: 16px 20px;
+  }
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-toggle label {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border: unset;
+  margin-bottom: 0;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-toggle img {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-search-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-search-wrapper .single-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 28px 32px;
+  border-right: solid 1px #cccfd6;
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-search-wrapper .single-box:last-child {
+  border: none;
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-search-wrapper .single-box .select2 {
+  width: 100% !important;
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-search-wrapper .single-box .select2 span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  border: unset;
+  margin-bottom: 0;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-search-wrapper .single-box .select2 .select2-selection__arrow {
+  content: url("/assets/images/icons/header-dropdown-arrow.svg");
+  height: 30px;
+  width: 30px;
+}
+.univarsity-fair-main .unifair-serach-box .uni-fair-search-wrapper .single-box:nth-child(1) .select2 .select2-selection__arrow {
+  content: url("/assets/images/icons/Calendar-Icon-Dark.svg");
+  height: 20px;
+  width: 20px;
 }/*# sourceMappingURL=style.css.map */
