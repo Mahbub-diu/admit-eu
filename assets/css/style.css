@@ -1296,6 +1296,7 @@ footer .footer-main .footer-common-links ul li a {
 footer .footer-main .copyright-text {
   border-top: 1px solid #012861;
   padding-top: 40px;
+  margin-top: 40px;
 }
 footer .footer-main .copyright-text p {
   text-align: center;
