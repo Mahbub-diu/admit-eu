@@ -899,3 +899,45 @@
     }
   }
 }
+
+.vision-main {
+  padding: 100px 0;
+  .title-box {
+    h2 {
+      @include title-64;
+      text-align: center;
+      margin-bottom: 48px;
+    }
+  }
+  .vision-flex {
+    padding: 32px 0;
+    border-bottom: 1px solid #ced4da;
+    display: flex;
+    flex-wrap: wrap;
+    .left-box {
+      flex: 1;
+      h3 {
+        font-family: $geller-600;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 130%;
+        color: #020f30;
+      }
+    }
+    .right-box {
+      flex: 1;
+      p {
+        color: #020f30;
+        font-size: 18px;
+        line-height: 24px;
+        font-family: $dm-font;
+        font-weight: 400;
+      }
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+      border: none;
+    }
+  }
+}

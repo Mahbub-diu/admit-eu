@@ -1291,6 +1291,49 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   font-weight: 400;
 }
 
+.vision-main {
+  padding: 100px 0;
+}
+.vision-main .title-box h2 {
+  font-size: 64px;
+  line-height: 80px;
+  font-family: "geller_testheadline_semibold";
+  color: #020f30;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.vision-main .vision-flex {
+  padding: 32px 0;
+  border-bottom: 1px solid #ced4da;
+  display: flex;
+  flex-wrap: wrap;
+}
+.vision-main .vision-flex .left-box {
+  flex: 1;
+}
+.vision-main .vision-flex .left-box h3 {
+  font-family: "geller_testheadline_semibold";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 130%;
+  color: #020f30;
+}
+.vision-main .vision-flex .right-box {
+  flex: 1;
+}
+.vision-main .vision-flex .right-box p {
+  color: #020f30;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+.vision-main .vision-flex:last-child {
+  padding-bottom: 0;
+  border: none;
+}
+
 footer .footer-main {
   padding: 100px 0;
   background-color: #faf7f2;
