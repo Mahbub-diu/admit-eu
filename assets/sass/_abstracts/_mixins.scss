@@ -133,3 +133,9 @@
   color: #020f30;
   font-weight: 600;
 }
+
+@mixin title-32 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 42px;
+}

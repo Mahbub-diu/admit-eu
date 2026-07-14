@@ -1436,6 +1436,71 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   color: #fff;
 }
 
+.what-wedo-main {
+  padding: 100px 0;
+}
+.what-wedo-main .title-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+.what-wedo-main .title-box h2 {
+  flex: 1;
+  font-size: 64px;
+  line-height: 80px;
+  font-family: "geller_testheadline_semibold";
+  color: #020f30;
+  font-weight: 600;
+}
+.what-wedo-main .title-box p {
+  flex: 1;
+  color: #020f30;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+.what-wedo-main .we-grid-parent {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.what-wedo-main .we-grid-parent .single-we-do {
+  background-color: #ffffff;
+  border-radius: 12px 12px 12px 12px;
+  overflow: hidden;
+  border: 1px solid #b5b2ef;
+  padding: 40px;
+  background-image: url("/assets/images/about/whatwe-do-pattern1.webp");
+  background-size: initial;
+  background-position: right 0px top;
+  background-repeat: no-repeat;
+}
+.what-wedo-main .we-grid-parent .single-we-do .icon {
+  margin-bottom: 24px;
+}
+.what-wedo-main .we-grid-parent .single-we-do .icon img {
+  width: 64px;
+  height: 64px;
+}
+.what-wedo-main .we-grid-parent .single-we-do h4 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 42px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-family: "geller_testheadline_semibold";
+  color: #000;
+}
+.what-wedo-main .we-grid-parent .single-we-do p {
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  color: #000;
+}
+
 footer .footer-main {
   padding: 100px 0;
   background-color: #faf7f2;
