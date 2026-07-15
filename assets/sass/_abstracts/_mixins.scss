@@ -139,3 +139,10 @@
   font-style: normal;
   line-height: 42px;
 }
+
+@mixin title-80 {
+  font-size: 80px;
+  line-height: 100px;
+  font-family: $geller-600;
+  font-weight: 600;
+}

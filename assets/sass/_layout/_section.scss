@@ -1229,3 +1229,63 @@
     }
   }
 }
+
+.news-inner-banner-main {
+  padding: 100px 0;
+  background: #faf7f2;
+  h1 {
+    text-align: center;
+    @include title-80;
+  }
+}
+
+.blog-main {
+  padding: 100px 0;
+  .blog-single-card {
+    border: 1px solid #b5b2ef;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    padding: 40px;
+    background-image: url('/assets/images/blog/siuk-news-shape-vector.svg');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    .date {
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 160%;
+      text-transform: uppercase;
+      font-family: $dm-font;
+      font-weight: 400;
+    }
+    h3 {
+      @include title-32;
+      font-weight: 600;
+      font-family: $geller-600;
+      margin-bottom: 24px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      font-family: $dm-font;
+      margin-bottom: 40px;
+    }
+    a {
+      font-size: 18px;
+      font-family: $dm-font;
+      font-weight: 600;
+      line-height: 24px;
+      padding: 16px 24px;
+      text-align: center;
+      width: fit-content;
+      border-radius: 12px;
+      color: $white;
+      background: $logo-blue;
+      text-transform: capitalize;
+      @include transition-3s;
+      &:hover {
+        background: $logo-golden;
+      }
+    }
+  }
+}

@@ -1624,6 +1624,76 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   font-family: "DM Sans", sans-serif;
 }
 
+.news-inner-banner-main {
+  padding: 100px 0;
+  background: #faf7f2;
+}
+.news-inner-banner-main h1 {
+  text-align: center;
+  font-size: 80px;
+  line-height: 100px;
+  font-family: "geller_testheadline_semibold";
+  font-weight: 600;
+}
+
+.blog-main {
+  padding: 100px 0;
+}
+.blog-main .blog-single-card {
+  border: 1px solid #b5b2ef;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  padding: 40px;
+  background-image: url("/assets/images/blog/siuk-news-shape-vector.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.blog-main .blog-single-card .date {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 160%;
+  text-transform: uppercase;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+.blog-main .blog-single-card h3 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 42px;
+  font-weight: 600;
+  font-family: "geller_testheadline_semibold";
+  margin-bottom: 24px;
+}
+.blog-main .blog-single-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 40px;
+}
+.blog-main .blog-single-card a {
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 16px 24px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 12px;
+  color: #fff;
+  background: #012861;
+  text-transform: capitalize;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+}
+.blog-main .blog-single-card a:hover {
+  background: #b9996a;
+}
+
 footer .footer-main {
   padding: 100px 0;
   background-color: #faf7f2;
