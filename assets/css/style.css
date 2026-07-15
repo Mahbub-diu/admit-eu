@@ -1569,6 +1569,7 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  border-radius: 4px;
 }
 .executive-team-main .executive-team-box .social-box ul li:nth-child(1) a {
   background: #1877f2;
@@ -1578,6 +1579,49 @@ header .main-header .header-flex .main-header-items > ul > li:last-child a::afte
 }
 .executive-team-main .executive-team-box .social-box ul li:nth-child(3) a {
   background: #1da1f2;
+}
+.executive-team-main .ceo-box-flex {
+  background: #012861;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0px;
+  border-radius: 12px 12px 12px 12px;
+  overflow: hidden;
+  padding: 8px;
+}
+.executive-team-main .ceo-box-flex .image-box {
+  width: 36%;
+}
+.executive-team-main .ceo-box-flex .image-box img {
+  width: 100%;
+  border-radius: 12px 12px 12px 12px;
+}
+.executive-team-main .ceo-box-flex .quote-box {
+  flex: 1;
+  padding: 72px 50px;
+  color: #fff;
+}
+.executive-team-main .ceo-box-flex .quote-box h4 {
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 600;
+  font-family: "geller_testheadline_semibold";
+  margin-bottom: 32px;
+}
+.executive-team-main .ceo-box-flex .quote-box h5 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 42px;
+  font-weight: 600;
+  font-family: "geller_testheadline_semibold";
+  margin-bottom: 10px;
+}
+.executive-team-main .ceo-box-flex .quote-box p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "DM Sans", sans-serif;
 }
 
 footer .footer-main {
